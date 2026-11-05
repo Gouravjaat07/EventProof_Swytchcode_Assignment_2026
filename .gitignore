@@ -1,0 +1,36 @@
+# Dependencies (lockfiles ARE committed for reproducible installs)
+node_modules/
+
+# Environment / secrets — never commit real credentials
+.env
+.env.local
+.env.*.local
+
+# Sandbox / tooling scratch
+.npm-cache/
+tools/sdk/*.tgz
+tools/sdk/package/
+tools/relay/.relay.log
+tools/relay/.demo.out
+tools/relay/.demo.err
+tools/relay/.port
+
+# Local database contents (placeholder tracked, data never)
+data/*
+!data/.gitkeep
+*.db
+*.db-wal
+*.db-shm
+
+# Frontend
+web/node_modules/
+web/dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+.swytchcode/workspace.json

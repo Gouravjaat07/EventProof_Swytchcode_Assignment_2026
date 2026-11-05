@@ -1,0 +1,30 @@
+{
+  "name": "eventproof-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "EventProof Phase 2 — React verification console (Vite + Tailwind)",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "lucide-react": "1.69.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router-dom": "7.18.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.4",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.8",
+    "@vitejs/plugin-react": "6.2.1",
+    "jsdom": "^26.1.0",
+    "tailwindcss": "4.3.4",
+    "vite": "8.3.6",
+    "vitest": "5.1.0"
+  }
+}

@@ -1,0 +1,2 @@
+{"ts":"2026-11-05T15:19:10.593Z","level":"info","service":"eventproof","msg":"eventproof listening","host":"127.0.0.1","port":3000,"version":"0.1.0","node":"v22.18.0","swytchcodeMethod":"calendar.calendar.events.get"}
+{"ts":"2026-11-05T15:19:10.596Z","level":"info","service":"eventproof","msg":"audit retention","persistent":true,"dbPath":"D:\\Downloads\\SwtychCode_Assignment\\data\\eventproof.db"}

@@ -1,0 +1,2 @@
+SQLite audit database lives here at runtime (data/eventproof.db + WAL files).
+Never commit database contents — only this placeholder is tracked.
