@@ -84,15 +84,15 @@ No AI APIs, paid services, message queues, caches, containers, or microservices 
 
 ```mermaid
 flowchart LR
-    UI[React console<br/>web/] -->|/api/v1 · same-origin proxy| API[Express 5 API<br/>src/interfaces/http]
-    API --> SVC[Application services<br/>src/application]
-    SVC --> ENG[Deterministic engine<br/>src/domain]
-    SVC --> PROV[CalendarProvider]
-    PROV --> CLIENT[SwytchcodeClient]
-    CLIENT -->|exec tool + JSON stdin| SDK[@swytchcode/runtime]
-    SDK --> CLI[Swytchcode CLI kernel<br/>managed OAuth]
-    CLI -->|read-only GET| GCAL[Google Calendar API v3]
-    SVC --> DB[(SQLite audit store<br/>data/eventproof.db)]
+    UI["React console (web/)"] -->|"HTTP /api/v1"| API["Express 5 API (src/interfaces/http)"]
+    API --> SVC["Application services (src/application)"]
+    SVC --> ENG["Deterministic engine (src/domain)"]
+    SVC --> PROV["CalendarProvider"]
+    PROV --> CLIENT["SwytchcodeClient"]
+    CLIENT -->|"exec + JSON stdin"| SDK["@swytchcode/runtime"]
+    SDK --> CLI["Swytchcode CLI kernel (managed OAuth)"]
+    CLI -->|"Read-only GET"| GCAL["Google Calendar API v3"]
+    SVC --> DB["SQLite audit store (data/eventproof.db)"]
 ```
 
 Dependency rule: **domain and application never import infrastructure.** The Swytchcode SDK is referenced only by `swytchcode.client.js`; swapping the provider means implementing the `EventSourceProvider` port — engine, services, and routes stay untouched.
