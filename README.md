@@ -10,6 +10,24 @@ EventProof inserts a fast, repeatable, explainable check between event informati
 
 **Intended users:** college event organizers, student clubs, university administrators, and campus communities.
 
+## EventProof Project Proof:
+
+Overview Dashboard:
+<img width="1919" height="883" alt="Screenshot 2026-11-06 234628" src="https://github.com/user-attachments/assets/7b500ae8-0161-4b5c-a2f0-c3ec7a2af46d" />
+
+Events Page:
+<img width="1895" height="905" alt="Screenshot 2026-11-06 234646" src="https://github.com/user-attachments/assets/f16a0d8e-f580-48f2-8849-e74e2f68e254" />
+
+Verify Annoucement Page:
+<img width="1904" height="870" alt="Screenshot 2026-11-06 234706" src="https://github.com/user-attachments/assets/40f1c589-b2ed-4b40-93e6-0a8964454ab9" />
+
+Verification History:
+<img width="1904" height="823" alt="Screenshot 2026-11-06 234715" src="https://github.com/user-attachments/assets/7a80a59b-d681-41e2-9325-912d6ea2fc6e" />
+
+Integrations Dashboard:
+<img width="1900" height="857" alt="Screenshot 2026-11-06 234722" src="https://github.com/user-attachments/assets/78ec7639-4047-4a5c-9a85-14b29e1187e3" />
+
+
 ## How EventProof Works
 
 1. **Fetch official events from Google Calendar.** The backend lists authoritative events through Swytchcode's read-only calendar tools.
